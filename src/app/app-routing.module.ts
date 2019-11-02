@@ -21,6 +21,22 @@ const routes: Routes = [
   canActivate: [ AuthGuard ],
   loadChildren: './pages/customers/customers.module#CustomersModule'
   },
+  { path: 'productions',
+  canActivate: [ AuthGuard ],
+  loadChildren: './pages/productions/productions.module#ProductionsModule'
+  },
+  { path: 'products',
+  canActivate: [ AuthGuard ],
+  loadChildren: './pages/products/products.module#ProductsModule'
+  },
+  { path: 'sales',
+  canActivate: [ AuthGuard ],
+  loadChildren: './pages/sales/sales.module#SalesModule'
+  },
+  { path: 'purchases',
+  canActivate: [ AuthGuard ],
+  loadChildren: './pages/purchases/purchases.module#PurchasesModule'
+  },
   { path: 'login', component: LoginComponent },
 
 ];

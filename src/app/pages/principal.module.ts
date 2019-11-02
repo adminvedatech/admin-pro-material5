@@ -8,6 +8,10 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { CustomersComponent } from './customers/customers.component';
 import { SuppliersComponent } from './suppliers/suppliers.component';
 import { AccountingBooksComponent } from './accounting-books/accounting-books.component';
+import { ProductionsComponent } from './productions/productions.component';
+import { ProductsComponent } from './products/products.component';
+import { SalesComponent } from './sales/sales.component';
+import { PurchasesComponent } from './purchases/purchases.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +19,11 @@ import { AccountingBooksComponent } from './accounting-books/accounting-books.co
     BankComponent,
     CustomersComponent,
     SuppliersComponent,
-    AccountingBooksComponent],
+    AccountingBooksComponent,
+    ProductionsComponent,
+    ProductsComponent,
+    SalesComponent,
+    PurchasesComponent],
   imports: [
     CommonModule,
     PAGES_ROUTES,
