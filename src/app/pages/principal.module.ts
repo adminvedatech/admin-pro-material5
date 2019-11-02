@@ -12,6 +12,7 @@ import { ProductionsComponent } from './productions/productions.component';
 import { ProductsComponent } from './products/products.component';
 import { SalesComponent } from './sales/sales.component';
 import { PurchasesComponent } from './purchases/purchases.component';
+import { ReportsComponent } from './reports/reports.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { PurchasesComponent } from './purchases/purchases.component';
     ProductionsComponent,
     ProductsComponent,
     SalesComponent,
-    PurchasesComponent],
+    PurchasesComponent,
+    ReportsComponent],
   imports: [
     CommonModule,
     PAGES_ROUTES,
