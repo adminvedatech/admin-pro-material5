@@ -3,34 +3,6 @@
 $primary: mat-palette($mat-grey);
 $accent:  mat-palette($mat-light-blue, 600, 300, 600);
 $warn:    mat-palette($mat-deep-orange, 300, 500, 800);
+@import 'src/app/login/login.component.sass';
 
-.mat-card {
-    width: 300px;
-    height: 300px;
-    margin-top: 50px;
-    margin-left: 300px;
-}
-.example-form {
-    margin-top: 50px;
-    min-width: 150px;
-    max-width: 500px;
-    width: 100%;
-}
 
-.example-full-width {
-    width: 100%;
-}
-
-mat-card-footer {
-    margin-top: 20px;
-}
-
-mat-card-footer .check-box {
-    margin-left: 10px;
-    float: left;
-}
-
-mat-card-footer .button-flat {
-    margin-right: 10px;
-    float: right;
-}
