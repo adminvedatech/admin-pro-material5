@@ -10,6 +10,8 @@ import { PrincipalModule } from './pages/principal.module';
 import { HttpClient } from 'selenium-webdriver/http';
 import { HttpClientModule } from '@angular/common/http';
 import { AngularMaterialModule } from './angular-material/angular-material.module';
+import { FormsModule } from '@angular/forms';
+import { LoginModule } from './login/login.module';
 
 @NgModule({
   declarations: [
@@ -19,6 +21,8 @@ import { AngularMaterialModule } from './angular-material/angular-material.modul
   imports: [
     BrowserModule,
     AngularMaterialModule,
+    FormsModule,
+    LoginModule,
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
