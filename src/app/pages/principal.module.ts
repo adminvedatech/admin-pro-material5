@@ -2,33 +2,47 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { PAGES_ROUTES } from './principal-routing.module';
-import { BankComponent } from './bank/bank.component';
 import { PrincipalComponent } from './principal.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { CustomersComponent } from './customers/customers.component';
-import { SuppliersComponent } from './suppliers/suppliers.component';
-import { AccountingBooksComponent } from './accounting-books/accounting-books.component';
-import { ProductionsComponent } from './productions/productions.component';
-import { ProductsComponent } from './products/products.component';
-import { SalesComponent } from './sales/sales.component';
-import { PurchasesComponent } from './purchases/purchases.component';
-import { ReportsComponent } from './reports/reports.component';
+
+import { CustomersModule } from './customers/customers.module';
+import { BankModule } from './bank/bank.module';
+import { AccountingBooksModule } from './accounting-books/accounting-books.module';
+import { ProductionsModule } from './productions/productions.module';
+import { ProductsModule } from './products/products.module';
+import { PurchasesModule } from './purchases/purchases.module';
+import { ReportsModule } from './reports/reports.module';
+import { SalesModule } from './sales/sales.module';
+import { SuppliersModule } from './suppliers/suppliers.module';
 
 @NgModule({
   declarations: [
     PrincipalComponent,
-    BankComponent,
-    CustomersComponent,
-    SuppliersComponent,
-    AccountingBooksComponent,
-    ProductionsComponent,
-    ProductsComponent,
-    SalesComponent,
-    PurchasesComponent,
-    ReportsComponent],
+  ],
   imports: [
     CommonModule,
+    // AccountingBooksModule,
+    // BankModule,
+    // CustomersModule,
+    // ProductionsModule,
+    // ProductsModule,
+    // PurchasesModule,
+    // ReportsModule,
+    // SalesModule,
+    // SuppliersModule,
     PAGES_ROUTES,
+    MatToolbarModule
+  ],
+  exports: [
+    // AccountingBooksModule,
+    // BankModule,
+    // CustomersModule,
+    // ProductionsModule,
+    // ProductsModule,
+    // PurchasesModule,
+    // ReportsModule,
+    // SalesModule,
+    // SuppliersModule,
     MatToolbarModule
   ]
 })

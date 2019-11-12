@@ -12,11 +12,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { AngularMaterialModule } from './angular-material/angular-material.module';
 import { FormsModule } from '@angular/forms';
 import { LoginModule } from './login/login.module';
+import { PrincipalComponent } from './pages/principal.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    // PrincipalComponent
   ],
   imports: [
     BrowserModule,
