@@ -8,13 +8,14 @@ import { AccountingBooksComponent } from './accounting-books/accounting-books.co
 import { ProductionsComponent } from './productions/productions.component';
 import { PurchasesComponent } from './purchases/purchases.component';
 import { ReportsComponent } from './reports/reports.component';
+import { BankListComponent } from './bank/bank-list/bank-list.component';
 
 const principalRoutes: Routes = [
   {
     path: '',
     component: PrincipalComponent,
     children: [
-        // { path: 'bank', component: BankComponent, data: { titulo: 'Banks' } },
+         { path: 'bank-list', component: BankListComponent, data: { titulo: 'Banks List' } },
         // { path: 'customers', component: CustomersComponent, data: { titulo: 'Customers' } },
         // { path: 'accounting-books', component: AccountingBooksComponent, data: { titulo: 'Accounting Books' } },
         // { path: 'productions', component: ProductionsComponent, data: { titulo: 'Productions Books' } },
