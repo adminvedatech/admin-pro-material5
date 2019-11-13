@@ -1,0 +1,14 @@
+<mat-card>
+  <input #fileInput style="display: none" type="file" (change)="onFileSelected($event)">
+  <div class="example-button-row">
+      <button mat-stroked-button (click)="fileInput.click()" class="btn btn-sm btn-info">Seleccione un Archivo</button>
+      <span class="text-file-name">{{ name }} </span>
+      <button mat-stroked-button (click)="onUploadFile()" class="btn btn-sm btn-info">Enviar Archivo al Servidor</button>
+      <button mat-stroked-button (click)="cancelFile()"> Cancelar</button>
+      <div *ngIf="currentFileUpload" class="progress">
+          <!-- <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" attr.aria-valuenow="{{progress.percentage}}" aria-valuemin="0" aria-valuemax="100" [ngStyle]="{width:progress.percentage+'%'}"> -->
+          <!-- {{progress.percentage}}%</div> -->
+          <mat-progress-bar mode="determinate" value="{{progress.percentage}}"></mat-progress-bar>
+      </div>
+  </div>
+</mat-card>

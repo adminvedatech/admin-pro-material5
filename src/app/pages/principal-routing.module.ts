@@ -15,7 +15,7 @@ const principalRoutes: Routes = [
     path: '',
     component: PrincipalComponent,
     children: [
-         { path: 'bank-list', component: BankListComponent, data: { titulo: 'Banks List' } },
+     //    { path: 'bank-list', component: BankListComponent, data: { titulo: 'Banks List' } },
         // { path: 'customers', component: CustomersComponent, data: { titulo: 'Customers' } },
         // { path: 'accounting-books', component: AccountingBooksComponent, data: { titulo: 'Accounting Books' } },
         // { path: 'productions', component: ProductionsComponent, data: { titulo: 'Productions Books' } },

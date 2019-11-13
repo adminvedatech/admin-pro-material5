@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, ErrorHandler } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -8,11 +8,13 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { LoginComponent } from './login/login.component';
 import { PrincipalModule } from './pages/principal.module';
 import { HttpClient } from 'selenium-webdriver/http';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AngularMaterialModule } from './angular-material/angular-material.module';
 import { FormsModule } from '@angular/forms';
 import { LoginModule } from './login/login.module';
 import { PrincipalComponent } from './pages/principal.component';
+import { AuthRequestOptions } from './auth/auth.request';
+import { ErrorService } from './services/error.service';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,18 @@ import { PrincipalComponent } from './pages/principal.component';
     MatToolbarModule
   ],
   entryComponents: [LoginComponent],
-  providers: [],
+  providers: [
+    ErrorService,
+    {
+      provide: ErrorHandler,
+      useClass: ErrorService
+    },
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: AuthRequestOptions,
+      multi: true
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

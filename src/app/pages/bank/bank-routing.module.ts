@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { BankComponent } from './bank.component';
 import { BankListComponent } from './bank-list/bank-list.component';
+import { AddBankComponent } from './add-bank/add-bank.component';
 
 const routes: Routes = [
   {
@@ -9,8 +10,12 @@ const routes: Routes = [
   component: BankComponent
   },
   {
-    path: 'bank-list',
+    path: 'list-bank',
     component: BankListComponent
+  },
+  {
+    path: 'add-bank',
+    component: AddBankComponent
   }
 
 ];

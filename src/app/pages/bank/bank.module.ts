@@ -4,9 +4,10 @@ import { CommonModule } from '@angular/common';
 import { BankRoutingModule } from './bank-routing.module';
 import { BankComponent } from './bank.component';
 import { BankListComponent } from './bank-list/bank-list.component';
+import { AddBankComponent } from './add-bank/add-bank.component';
 
 @NgModule({
-  declarations: [BankComponent, BankListComponent],
+  declarations: [BankComponent, BankListComponent, AddBankComponent],
   imports: [
     CommonModule,
     BankRoutingModule
