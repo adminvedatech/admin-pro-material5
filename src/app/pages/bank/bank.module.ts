@@ -7,7 +7,7 @@ import { BankListComponent } from './bank-list/bank-list.component';
 import { AddBankComponent } from './add-bank/add-bank.component';
 
 @NgModule({
-  declarations: [BankComponent, BankListComponent, AddBankComponent],
+  declarations: [BankListComponent, AddBankComponent],
   imports: [
     CommonModule,
     BankRoutingModule

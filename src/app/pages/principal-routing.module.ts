@@ -9,12 +9,15 @@ import { ProductionsComponent } from './productions/productions.component';
 import { PurchasesComponent } from './purchases/purchases.component';
 import { ReportsComponent } from './reports/reports.component';
 import { BankListComponent } from './bank/bank-list/bank-list.component';
+import { AuthGuard } from '../auth/auth.guard';
 
 const principalRoutes: Routes = [
-  {
-    path: '',
-    component: PrincipalComponent,
-    children: [
+
+//   { path:'bank', component: BankComponent, data: { titulo: 'ProgressBars' } },
+//   { path:'customer', component: CustomersComponent, data: { titulo: 'ProgressBars' } },
+ 
+  // { path: 'customer', loadChildren: () => import('./customers/customers.module').then(m => m.CustomersModule)},
+
      //    { path: 'bank-list', component: BankListComponent, data: { titulo: 'Banks List' } },
         // { path: 'customers', component: CustomersComponent, data: { titulo: 'Customers' } },
         // { path: 'accounting-books', component: AccountingBooksComponent, data: { titulo: 'Accounting Books' } },
@@ -25,9 +28,9 @@ const principalRoutes: Routes = [
 
 
 
-        { path: '', redirectTo: '/bank', pathMatch: 'full' }
-    ]
-}
+      //   { path: '', redirectTo: '/bank', pathMatch: 'full' }
+    
+
 ];
 
 // @NgModule({

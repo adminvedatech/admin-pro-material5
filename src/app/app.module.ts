@@ -1,7 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, ErrorHandler } from '@angular/core';
-
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -15,19 +13,24 @@ import { LoginModule } from './login/login.module';
 import { PrincipalComponent } from './pages/principal.component';
 import { AuthRequestOptions } from './auth/auth.request';
 import { ErrorService } from './services/error.service';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { NofoundComponent } from './nofound/nofound.component';
+import { APP_ROUTES } from './app-routing.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
+    NofoundComponent,
     // PrincipalComponent
   ],
   imports: [
     BrowserModule,
     AngularMaterialModule,
+    FlexLayoutModule,
     FormsModule,
     LoginModule,
-    AppRoutingModule,
+   APP_ROUTES,
     HttpClientModule,
     BrowserAnimationsModule,
     PrincipalModule,

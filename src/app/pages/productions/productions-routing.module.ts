@@ -3,10 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { ProductionsComponent } from './productions.component';
 
 const routes: Routes = [
-  {
-    path: '',
-    component: ProductionsComponent
-  }
+  
 ];
 @NgModule({
   imports: [RouterModule.forChild(routes)],
